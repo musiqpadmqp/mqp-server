@@ -16,11 +16,11 @@
 	hostWebserver: true
 	socketServer: {
 		host: ""                          // Host name or IP that the socket server is located at. Leave blank to bind to process IP address
-		port: 8082// Leave blank to bind to process PORT
+		port: ""
 	}
 	webServer: {
 		address: ""                       // Leave blank to bind to process IP address.
-		port: 8080// Leave blank to bind to process PORT.
+		port: "" // Leave blank to bind to process PORT.
 
 		redirectHTTP: false// Set to true if you want HTTP redirect to HTTPS.
 		redirectPort: 80// Required if setting above is true. Set to the port you want to redirect HTTP to HTTPS from (Default: 80). 
@@ -31,12 +31,12 @@
 		cert: "path-to-cert"
 	}
 	room: {
-		name: "Pad Name"                  // This is your pad name. It is shown as a user friendly description on the lounge and tab name.
-		slug: "this-is-your-slug"         // Slugs are used to identify your pad when connecting to musiqpad! This slug must be unique and all in lowecase.
-		greet: "Welcome to musiqpad!"
-		bg: ""                            // Background image file path. Accepts external images. If this is undefined the default background will be used.
+		name: "Deezify"                  // This is your pad name. It is shown as a user friendly description on the lounge and tab name.
+		slug: "Deezify"         // Slugs are used to identify your pad when connecting to musiqpad! This slug must be unique and all in lowecase.
+		greet: "Welcome to Deezify!"
+		bg: "https://i.imgur.com/c8hKree.jpg"                            // Background image file path. Accepts external images. If this is undefined the default background will be used.
 		maxCon: 0
-		ownerEmail: "user@domain.tld" // This needs to be set then the server restarted to take effect.
+		ownerEmail: "microfix1252002@gmail.com" // This needs to be set then the server restarted to take effect.
 		guestCanSeeChat: true
 		bannedCanSeeChat: false
 		lastmsglimit: 6// How many messages a user can see after joining.
@@ -99,17 +99,17 @@
 		}
 		description:
 			'''
-			 <h1>Pad Description</h1>
-			 Here you can put anything you want in HTML!
+			 <h1>Deezify</h1>
+			 Welcome to Deezify Community!
 			'''
 		tags: { // Tags for Google & co
-			keywords: "musiqpad"
+			keywords: "Deezify"
 			description: ""
 			image: "https://cdn.musiqpad.com/img/icon-256.png" // Image on twitter/facebook/slack/...
-			twitter: "@musiqpad" 
+			twitter: "@deezifycf" 
 			description: // A one to two sentence description for search engines & co
 				'''
-				Real time music streaming and chat with friends. Musiqpad is a place where people can discover new music.
+				Stream Deezify
 				'''
 			themeColor: "" // a hex color for the theme on chrome for android
 			favicon: "/pads/lib/img/icon.png"
@@ -121,11 +121,11 @@
 	}
 	apis: {
 		YT: {
-			key: "" // Required api key in order for YouTube search to work.
+			key: "AIzaSyDMO0F49CqUVevvWdOlmuoxzVlwjxzil9A" // Required api key in order for YouTube search to work.
 			restrictSearchToMusic: false
 		}
 		SC: {
-			key: ""
+			key: "b3f009303adf6466be053b65bd2b418a"
 		}
 		reCaptcha: {
 			key: ""
@@ -140,12 +140,12 @@
 	// The amount of time users stay logged in for before having to login again, eg "2 days", "10h", "7d"
 	loginExpire: "5d",
 	db: {
-		dbType: "level"   				      // Values "level" for LevelDB, "mysql" for MySQL and "mongo" for MongoDB
+		dbType: "mysql"   				      // Values "level" for LevelDB, "mysql" for MySQL and "mongo" for MongoDB
 		dbDir: "./socketserver/db"	    // Only used for LevelDB. Directory to save databases.  Default is ./socketserver/db
-		mysqlUser: ""     				      // Only used for MySQL.  Database username
-		mysqlPassword: "" 					    // Only used for MySQL.  Database password
-		mysqlHost: ""                  // Only used for MySQL.  Host address
-		mysqlDatabase: ""               // Only used for MySQL.  Database being used
+		mysqlUser: "b31c318cee9a7f"     				      // Only used for MySQL.  Database username
+		mysqlPassword: "70a67299" 					    // Only used for MySQL.  Database password
+		mysqlHost: "eu-cdbr-west-02.cleardb.net"                  // Only used for MySQL.  Host address
+		mysqlDatabase: "heroku_c0e55cb5b59ea60"               // Only used for MySQL.  Database being used
 		mongoUser: ""                   // Only used for MongoDB.  Database username
 		mongoPassword: ""               // Only used for MongoDB.  Database password
 		mongoHost: ""                   // Only used for MongoDB.  Host address
