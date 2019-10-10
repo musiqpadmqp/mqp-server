@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/musiqpad/mqp-server#readme",
   "scripts": {
-    "start": "node ./mqp.js start",
+    "start": "node start.js",
     "stop": "node ./mqp.js stop",
     "restart": "node ./mqp.js restart",
     "log": "node ./mqp.js log",
