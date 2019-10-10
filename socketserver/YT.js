@@ -178,8 +178,7 @@ youtube.search.list({
 	{
 		console.log(error);
 	}
-	});
-  });
+});
 	/*https.get(url, function(res) {		
 		var str = '';
 		
