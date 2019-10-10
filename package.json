@@ -1,9 +1,9 @@
 {
   "name": "mqp-server",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "musiqpad self-hosted server",
   "main": "server-package.js",
-  "author": "musiqpad Team <support@musiqpad.com>",
+  "author": "musiqpad Team <cik3r@pm.me>",
   "private": false,
   "engines": {
     "node": "8.14.1"
