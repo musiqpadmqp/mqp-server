@@ -157,7 +157,7 @@ YT.prototype.search = function(query, callback){
 		var str = '';
 		
 		res.on('data', function (data) {
-			console.log(data);
+			console.log(data.toString('utf8'));
 			str += data;
 		});
 		
