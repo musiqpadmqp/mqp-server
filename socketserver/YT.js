@@ -159,23 +159,25 @@ youtube.search.list({
 		type: "video",
 		videoEmbeddable: true,
 		fields: "items(id)"
-  }, function (res) {
+  }, function (data, error) {
+	if(data) {
 	var str = '';
-		
-	res.on('data', function (data) {
-			str += data;
-	});
+	str += data;
 	
-	res.on('end', function () {
 			
-			str = JSON.parse(str);
+	str = JSON.parse(str);
 			
-			var ids = [];
+	var ids = [];
 			
-			for(var item in str.items){
+	for(var item in str.items){
 				ids.push(str.items[item].id.videoId);
-			}
-			queryVideo(ids,callback);
+	}
+	queryVideo(ids,callback);
+	}
+	if(error)
+	{
+		console.log(error);
+	}
 	});
   });
 	/*https.get(url, function(res) {		
