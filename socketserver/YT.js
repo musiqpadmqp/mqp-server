@@ -159,25 +159,23 @@ youtube.search.list({
 		type: "video",
 		videoEmbeddable: true,
 		fields: "items(id)"
-  }, function (data, error) {
-	if(data) {
-	var str = '';
-	str += data;
-	
+  }, function (err,response) {
+		var str = '';
+		
+		response.on('data', function (data) {
+			str += data;
+		});
+		
+		response.on('end', function () {
 			
-	str = JSON.parse(str);
+		str = JSON.parse(str);
 			
-	var ids = [];
+		var ids = [];
 			
-	for(var item in str.items){
-				ids.push(str.items[item].id.videoId);
-	}
-	queryVideo(ids,callback);
-	}
-	if(error)
-	{
-		console.log(error);
-	}
+		for(var item in str.items){
+			ids.push(str.items[item].id.videoId);
+		}
+		queryVideo(ids,callback);
 });
 	/*https.get(url, function(res) {		
 		var str = '';
@@ -200,7 +198,7 @@ youtube.search.list({
 	}).on('error', function(err) {
 	    callback("ConnectionError");
 	});*/
-};
+//};
 
 YT.prototype.removeThumbs = function(inData){
 	var out;
