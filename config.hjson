@@ -25,7 +25,7 @@
 		redirectHTTP: true// Set to true if you want HTTP redirect to HTTPS.
 		redirectPort: 80// Required if setting above is true. Set to the port you want to redirect HTTP to HTTPS from (Default: 80). 
 	}
-	useSSL: true// If you want your pad to be accesible over HTTPS set SSL to true and add the path of your certificates
+	useSSL: false// If you want your pad to be accesible over HTTPS set SSL to true and add the path of your certificates
 	certificate: {
 		key: "path-to-key"
 		cert: "path-to-cert"
