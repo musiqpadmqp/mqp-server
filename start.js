@@ -60,7 +60,7 @@ process.on('uncaughtException', (err) => {
 
 process.on('exit', socketServer.gracefulExit);
 process.on('SIGINT', socketServer.gracefulExit);
-var daemon = no;
+var daemon = "no";
 if (daemon = "yes") {
   if (fileExistsSync(`${__dirname}/pidfile`)) {
     try {
