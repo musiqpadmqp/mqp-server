@@ -1,6 +1,6 @@
 const https = require('https');
 const util = require('util');
-var google = require('googleapis');
+const {google} = require('googleapis');
 const log = new (require('basic-logger'))({showTimestamp: true, prefix: "YT"});
 const querystring = require('querystring');
 const Duration = require("durationjs");
