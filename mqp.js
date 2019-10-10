@@ -31,8 +31,8 @@ function getRunningPid(callback) {
     }
   });
 }
-
-switch (process.argv[2]) {
+var start = "start";
+switch (start) {
   case 'start':
     getRunningPid((err, pid) => {
       if (!err) {
