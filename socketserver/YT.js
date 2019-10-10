@@ -159,11 +159,7 @@ youtube.search.list({
 		type: "video",
 		videoEmbeddable: true,
 		fields: "items(id)"
-  }, function (err, data, res) {
-    if (err) {
-	    callback("ConnectionError");
-    }
-   
+  }, function (res) {
 	var str = '';
 		
 	res.on('data', function (data) {
