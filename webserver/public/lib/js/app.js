@@ -5187,7 +5187,7 @@
 	}
 	else
 	{
-		var wsprot = "wss";
+		var wsprot = "ws";
 	}
 	function initSocket(){
 		socket = new WebSocket(wsprot + '://' + socketDomain + ':' + socketPort);
