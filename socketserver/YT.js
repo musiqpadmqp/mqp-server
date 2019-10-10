@@ -1,15 +1,10 @@
 const https = require('https');
 const util = require('util');
-const {google} = require('googleapis');
 const log = new (require('basic-logger'))({showTimestamp: true, prefix: "YT"});
 const querystring = require('querystring');
 const Duration = require("durationjs");
 const nconf = require('nconf');
 const key = nconf.get('apis:YT:key');
-var youtube = google.youtube({
-   version: 'v3',
-   auth: key
-});
 
 https.globalAgent.keepAlive = true;
 https.globalAgent.keepAliveMsecs = 60e3;
@@ -141,47 +136,28 @@ YT.prototype.getVideo = function(inCid, callback){
 };
 
 YT.prototype.search = function(query, callback){
-/*	var inObj = {
-
-	};*/
-	
-	/*if (nconf.get('apis:YT:restrictSearchToMusic'))
-		inObj.videoCategoryId = 10; // This is restricting the search to things categorized as music
-	
-	var url = "https://www.googleapis.com/youtube/v3/search?" + querystring.stringify(inObj);
-	*/
-	//GET Request
-	
-youtube.search.list({
+	var inObj = {
 		part: "id",
 		maxResults: 50,
 		q: query,
 		type: "video",
 		videoEmbeddable: true,
-		fields: "items(id)"
-  }, function (err,response) {
-		var str = '';
+		fields: "items(id)",
+		key: key
+	};
+	
+	if (nconf.get('apis:YT:restrictSearchToMusic'))
+		inObj.videoCategoryId = 10; // This is restricting the search to things categorized as music
+	
+	var url = "https://www.googleapis.com/youtube/v3/search?" + querystring.stringify(inObj);
+	
+	//GET Request
+	https.get(url, function(res) {
 		
-		response.on('data', function (data) {
-			str += data;
-		});
-		
-		response.on('end', function () {
-			
-		str = JSON.parse(str);
-			
-		var ids = [];
-			
-		for(var item in str.items){
-			ids.push(str.items[item].id.videoId);
-		}
-		queryVideo(ids,callback);
-		});
-});
-	/*https.get(url, function(res) {		
 		var str = '';
 		
 		res.on('data', function (data) {
+			console.log(data);
 			str += data;
 		});
 		
@@ -198,7 +174,7 @@ youtube.search.list({
 		});
 	}).on('error', function(err) {
 	    callback("ConnectionError");
-	});*/
+	});
 };
 
 YT.prototype.removeThumbs = function(inData){
