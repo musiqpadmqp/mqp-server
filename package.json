@@ -56,7 +56,9 @@
     "ws": "^1.1.1",
     "xoauth2": "^1.1.0",
     "yesno": "0.0.1",
-    "lodash": "4.17.4"
+    "lodash": "4.17.4",
+    "googleapis": "*",
+    "google-auth-library"
   },
   "devDependencies": {
     "ava": "^0.15.2",
