@@ -5,6 +5,9 @@
   "main": "server-package.js",
   "author": "musiqpad Team <support@musiqpad.com>",
   "private": false,
+  "engines": {
+    "node": "8.14.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/musiqpad/mqp-server.git"
