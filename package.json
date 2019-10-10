@@ -58,7 +58,7 @@
     "yesno": "0.0.1",
     "lodash": "4.17.4",
     "googleapis": "*",
-    "google-auth-library"
+    "google-auth-library": "*"
   },
   "devDependencies": {
     "ava": "^0.15.2",
