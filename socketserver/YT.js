@@ -161,7 +161,7 @@ youtube.search.list({
 		fields: "items(id)"
   }, function (err, data) {
     if (err) {
-      console.error('Error: ' + err);
+	    callback("ConnectionError");
     }
     if (data) {
 	str = JSON.parse(data);
@@ -173,8 +173,7 @@ youtube.search.list({
 	queryVideo(ids,callback);
     }
   });
-	https.get(url, function(res) {
-/*		
+	/*https.get(url, function(res) {		
 		var str = '';
 		
 		res.on('data', function (data) {
