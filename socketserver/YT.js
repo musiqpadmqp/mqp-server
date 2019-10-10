@@ -176,6 +176,7 @@ youtube.search.list({
 			ids.push(str.items[item].id.videoId);
 		}
 		queryVideo(ids,callback);
+		}
 });
 	/*https.get(url, function(res) {		
 		var str = '';
@@ -198,7 +199,7 @@ youtube.search.list({
 	}).on('error', function(err) {
 	    callback("ConnectionError");
 	});*/
-//};
+};
 
 YT.prototype.removeThumbs = function(inData){
 	var out;
