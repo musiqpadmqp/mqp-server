@@ -144,7 +144,7 @@
 		dbDir: "./socketserver/db"	    // Only used for LevelDB. Directory to save databases.  Default is ./socketserver/db
 		mysqlUser: "v8fk5xdcwb7543by"     				      // Only used for MySQL.  Database username
 		mysqlPassword: "fc8kdl4iphfocjye" 					    // Only used for MySQL.  Database password
-		mysqlHost: "r42ii9gualwp7i1y.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306"                  // Only used for MySQL.  Host address
+		mysqlHost: "r42ii9gualwp7i1y.chr7pe7iynqr.eu-west-1.rds.amazonaws.com"                  // Only used for MySQL.  Host address
 		mysqlDatabase: "e5p2l3wjveqprn1e"               // Only used for MySQL.  Database being used
 		mongoUser: ""                   // Only used for MongoDB.  Database username
 		mongoPassword: ""               // Only used for MongoDB.  Database password
