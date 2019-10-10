@@ -5181,9 +5181,16 @@
 
 	var socket = null;
 
-
+	if(location.protocol == 'https:')
+	{
+		var wsprot = "wss";
+	}
+	else
+	{
+		var wsprot = "wss";
+	}
 	function initSocket(){
-		socket = new WebSocket((config.useSSL ? 'wss' : 'ws') + '://' + socketDomain + ':' + socketPort);
+		socket = new WebSocket(wsprot + '://' + socketDomain + ':' + socketPort);
 
 		socket.sendJSON = function(inObj){ socket.send( JSON.stringify(inObj) );};
 		/*DEBUG*/
