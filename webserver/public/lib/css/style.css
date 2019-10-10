@@ -1,0 +1,579 @@
+.ico-logo {
+background-image: url('http://i.imgur.com/SFxQJMr.gif');
+}
+
+.song-progress {
+    background-color: #168E79 !important;
+    -moz-box-shadow: 0px -2px 10px #168E79;
+    -webkit-box-shadow: 0px -2px 10px #168E79;
+    box-shadow: 0px -2px 10px #168E79;
+    height: 4px;
+}
+
+#chat {
+    background-image: url("http://i.imgur.com/1DDrkpH.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: calc(100% - 77px);
+}
+
+#room-bg {
+  background-image: url("http://i.imgur.com/5UfrOf3.jpg") !important;
+  background-position-x: calc(100% - 400px);
+}
+
+.room-greet {
+   background: rgba(169,169,169,0.2) !important;
+   border-left: 2px solid #B1B1B1
+}
+
+.system .umsg {
+    color: #B1B1B1;
+}
+
+.mention {
+   background: rgba(197, 197, 197, 0.2);
+   border-left: 2px solid #B1B1B1
+}
+
+.mdi.msg {
+   color: #A0A0A0 !important;
+}
+
+.controls {
+   background: #020202;
+}
+
+.btn-grab .playlists-grab {
+   background: #020202;
+}
+
+#msg-in {
+   background: #020202;
+}
+
+.logo-dash {
+   background: #020202;
+}
+
+.right .label {
+   color: #88898C !important;
+}
+
+.right .label:hover {
+   color: #ddd !important;
+}
+
+.dash {
+   border-bottom: 1px solid #444A59;
+   background: #0E0E0E;
+}
+
+.yt-sng .nav, .hist-sng .nav {
+   background: #0E0E0E;
+   color: #88898C;
+}
+
+.yt-sng {
+   background: rgba(27,27,27,0.68);
+}
+
+.hist-sng {
+   background: #0E0E0E;
+}
+
+a{
+   color: #168E79;
+}
+
+a:hover {
+ color: #117766;
+ text-shadow: 0px 0px 7px #168E79;
+}
+
+.image-toggle {
+   color: #168E79;
+}
+
+.greet-uname {
+   color: #168E79;
+}
+
+.btn-logo {
+   background: #2F3238;
+}
+
+#people-back .tray {
+   background: #0E0E0E;
+}
+
+.btn-upvote {
+   border-bottom: 2px solid #4CAF50;
+   color: #4CAF50;
+}
+
+.btn-upvote:not(.active):hover {
+   background: rgba(76,175,80,0.25);
+}
+
+.btn-upvote.active {
+   background: #4CAF50;
+   color: #020202;
+       box-shadow: 0px 16px 20px -13px #4CAF50;
+    -webkit-transition: box-shadow 0.1s ease;
+    -moz-transition: box-shadow 0.1s ease;
+    -ms-transition: box-shadow 0.1s ease;
+    -o-transition: box-shadow 0.1s ease;
+    transition: box-shadow 0.1s ease;
+}
+
+.btn-grab {
+   color: #2196F3;
+   border-bottom: 2px solid #2196F3;
+}
+
+.btn-grab:not(.active):hover {
+   background: rgba(33,150,243,0.25);
+}
+
+.btn-grab.active {
+   background: #2196F3;
+   color: #020202;
+       box-shadow: 0px 16px 20px -13px #2196F3;
+    -webkit-transition: box-shadow 0.1s ease;
+    -moz-transition: box-shadow 0.1s ease;
+    -ms-transition: box-shadow 0.1s ease;
+    -o-transition: box-shadow 0.1s ease;
+    transition: box-shadow 0.1s ease;
+}
+
+.playlists-grab .pl-grab:not(.active):hover {
+   background: rgba(33,150,243,0.25);
+}
+
+.btn-grab .playlists-grab {
+   color: #2196F3;
+}
+
+.btn-join {
+   border-bottom: 2px solid #F46B40;
+}
+
+.btn-snooze.active {
+   background: #925AFF;
+   color: #020202;
+          box-shadow: 0px 16px 20px -13px #925AFF;
+    -webkit-transition: box-shadow 0.1s ease;
+    -moz-transition: box-shadow 0.1s ease;
+    -ms-transition: box-shadow 0.1s ease;
+    -o-transition: box-shadow 0.1s ease;
+    transition: box-shadow 0.1s ease;
+}
+
+.btn-snooze {
+   border-bottom: 2px solid #925AFF;
+}
+
+.btn-downvote {
+   color: #C8303E;
+   border-bottom: 2px solid #C8303E;
+}
+
+.btn-downvote.active {
+    color: #020202;
+    background-color: #C8303E;
+    box-shadow: 0px 16px 20px -13px #C8303E;
+    -webkit-transition: box-shadow 0.1s ease;
+    -moz-transition: box-shadow 0.1s ease;
+    -ms-transition: box-shadow 0.1s ease;
+    -o-transition: box-shadow 0.1s ease;
+    transition: box-shadow 0.1s ease;
+}
+
+.playlists-grab .pl-grab-create:not(.active):hover {
+    background: rgba(33,150,243,0.25);
+}
+
+.greet-umsg {
+   color: #B1B1B1;
+}
+
+.tray .active {
+   color: #B1B1B1;
+   border-bottom: 3px solid #B1B1B1;
+   background: rgba(136,136,136,0.2);
+}
+
+.waitlist-user:first-child {
+   background: rgba(199, 199, 199, 0.2);
+}
+
+.lib-fdr-search {
+   background: #0E0E0E;
+}
+
+.lib-sng-search {
+   background: #0E0E0E;
+}
+
+.lib-fdr {
+   background: rgba(27,27,27,0.68);
+}
+
+.lib-fdr.selected {
+   border-right: 3px solid #B1B1B1;   
+   background: rgba(255,255,255,0.2);
+}
+
+.lib-sng:hover {
+        background: rgba(99,99,99,0.2);
+}
+
+.nav.active {
+   border-right: 3px solid #B1B1B1;
+   background: rgba(136,136,136,0.2);
+}
+
+.lib-sng:first-child {
+   background: rgba(173,173,173,0.2);
+}
+
+.settings-timestamp {
+   background-color: #5D1616;
+}
+
+.settings-timestamp.active {
+   background-color: #208424;
+}
+
+.cm.emote .umsg {
+   color: #A526A5;
+    font-weight: 700;
+}
+
+.cm.system {
+    border-left: 2px solid #B1B1B1;
+}
+
+.modal-controls {
+   background: #171717;
+}
+
+.user-menu-content {
+   background: #060606;
+}
+
+.user-menu .arrow {
+   background: #424242;
+}
+
+.popover .modal-ctrl:hover {
+   background: rgba(171, 171, 171, 0.25);
+}
+
+.user-menu .modal-ctrl:hover {
+   background: rgba(171, 171, 171, 0.25);
+}
+
+.modal {
+   background: #0E0E0E;
+}
+
+.modal-yes {
+   color: #4CAF50;
+}
+
+.green {
+   color: #4CAF50;
+}
+
+.modal-yes:hover {
+   background: rgba(76,175,80,0.25);
+}
+
+.loader {
+    border-top-color: #2E173F;
+    border-bottom-color: #2E173F;
+}
+
+.loader:before {
+    border-top-color: #7A250B;
+    border-bottom-color: #7A250B;
+}
+
+.loader:after {
+    border-top-color: #1E4805;
+    border-bottom-color: #1E4805;
+}
+
+.autocomplete>ul>li.active {
+       background: #2A2A2A;
+}
+
+.autocomplete>ul>li {
+   background: #0C0C0C;
+}
+
+.lib-fdr.draghover {
+   background: #333333;
+}
+
+.lib-sng-drop {
+       background: rgb(177, 177, 177);
+}
+
+input.ban-reason, input.edit-playlist-name {
+   background: #1E1F23;
+}
+
+#login {
+       background: #060606;
+}
+
+#creds input:focus {
+    border-bottom: 1px solid #138E79;
+}
+
+#inp-rc:focus {
+    border-bottom: 1px solid #138E79;
+}
+
+#inp-fgt-pw:focus {
+    border-bottom: 1px solid #138E79;
+}
+
+#inp-new-pw:focus {
+    border-bottom: 1px solid #138E79;
+}
+
+#creds .ctrl:hover {
+       background: rgba(171, 171, 171, 0.25);
+}
+
+#creds .controls {
+       background: #191919;
+}
+
+#register {
+    background: #060606;
+}
+
+::selection {
+   background: #E17844;
+}
+
+.yellow {
+   color: #0FA58A!important;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.ctr {
+    background-color: black;
+}
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: calc(100% - 400px);
+  border-top: 1px solid #2D323C;
+}
+
+.playback {
+  position: absolute;
+  margin: 0 auto;
+  width: 854px;
+  height: 480px;
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  margin-top: calc(-921px/ 2);
+  margin-left: calc(-854px/ 2);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-color: rgba(255, 0, 0, 0);;
+  border: none;
+}
+.song-progress {
+  width: calc(100% - 400px);
+  background-color: white;
+  position: fixed;
+}
+.dash {
+  background-color: #1E222A !important;
+  -webkit-box-shadow: 0 0 50px 9px #000000;
+  box-shadow: 0 0 50px 9px #000000;  border: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 15;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  vertical-align: middle;
+  text-align: center
+}
+
+.tab {
+  color: white;
+}
+
+#app-right {
+  -webkit-box-shadow: 0 0 50px 9px #000000;
+      box-shadow: 0 0 50px 9px #000000;
+      border: none;
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      background: rgba(10, 10, 10, 0.78);
+      width: 400px;
+      height: calc(100% - 41px);
+      bottom: 0;
+}
+
+#msg-form {
+  border: none;
+}
+.btn-upvote.active {
+  height: calc(100% + 1px);
+  color: #1C1C1F;
+  background: #A7CA00;
+  margin-top: -1px;
+}
+
+.nav {
+  color: white;
+}
+
+.navbar {
+  transform: scale(0.7) !important;
+  margin-top: 70px !important;
+  margin-left: 3px !important;
+}
+.icon-info {
+  background-color: white;
+}
+
+.btn-logo {
+  background-color: #393F4B !important;
+  border: none;
+}
+.logo-menu {
+    position: absolute;
+    z-index: 16;
+    top: 40px;
+    left: 0;
+    width: calc(100% - 400px);
+    height: calc(100% - 40px);
+    display: none;
+    background: rgba(10,10,10,0.9);
+}
+
+.logo-dash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: rgba(28, 28, 31, 0);
+    border-right: 1px solid #0a0a0a;
+}
+
+
+.left .lable {
+  margin-top: -4px;
+}
+
+.labels {
+  margin: 0px !important;
+  margin-top: 2px !important;
+  float: left;
+  text-align: left;
+}
+
+.btn-upvote.active {
+  color: black;
+}
+
+.btn-snooze {
+    color: #A36DFF;
+}
+
+.playback.fullscreen {
+    width: calc(100% - 1px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    border: none;
+    border: none !important;
+}
+
+.tray .active {
+    border-bottom: none !important;
+    background: rgb(0, 0, 0) !important;
+}
+
+.video {
+    border: 3px solid #6E37FD !important;
+    transform: scale(0.7) !important;
+}
+.controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: calc(-40%/ 2);
+    height: 40px;
+    width: 40%;
+    background-color: rgba(10, 10, 10, 0.78) !important;
+    -webkit-box-shadow: 0 0 50px 5px #000000;
+    box-shadow: 0 0 50px 5px #000000;
+}
+.pl-grab-create {
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#room-bg {
+    background-image: url('https://i.imgur.com/8J1BhTy.jpg') !important;
+}
+.song-progress {
+    height: 20px;
+    bottom: -1px;
+}
+.dash {
+    background-color: rgba(10, 10, 10, 0.9) !important;
+    -webkit-box-shadow: 0 0 50px 9px #000000;
+    box-shadow: 0 0 50px 9px #000000;
+    border: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 15;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn-logo {
+    background-color: rgba(10, 10, 10, 0.78) !important;
+    -webkit-box-shadow: 0 0 50px 5px #000000;
+    box-shadow: 0 0 50px 5px #000000;
+}
+#msg-in {
+    background-color: rgba(10, 10, 10, 0.78) !important;
+}
+.bdg
+{
+    display:none;
+}
