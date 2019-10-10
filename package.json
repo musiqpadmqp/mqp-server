@@ -31,7 +31,7 @@
     "chalk": "^1.0.0",
     "clean-css": "^3.4.9",
     "compression": "^1.6.2",
-    "daemon": "^1.1.0",
+    "daemon": "github:zipang/daemon.node#48d0977c26fb3a6a44ae99aae3471b9d5a761085",
     "deasync": "^0.1.4",
     "download-git-repo": "^0.1.2",
     "durationjs": "^1.1.1",
