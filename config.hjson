@@ -121,7 +121,7 @@
 	}
 	apis: {
 		YT: {
-			key: "AIzaSyDMO0F49CqUVevvWdOlmuoxzVlwjxzil9A" // Required api key in order for YouTube search to work.
+			key: "AIzaSyDlL_GvsJnFrM8eE9Qpvd15h4GqjDRp5fc" // Required api key in order for YouTube search to work.
 			restrictSearchToMusic: false
 		}
 		SC: {
