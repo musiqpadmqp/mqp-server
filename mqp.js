@@ -44,10 +44,7 @@ switch (start) {
         console.log(`  "${chalk.yellow.bold('npm restart')}" to restart musiqpad`);
 
         // Spawn a new musiqpad daemon process, might need some more settings but I'm waiting for the new config storage for that.
-        daemon.daemon(`${__dirname}/start.js`, '--daemon', {
-          stdout: fs.openSync(path.join(process.cwd(), 'log.txt'), 'a'),
-          stderr: fs.openSync(path.join(process.cwd(), 'log.txt'), 'a'),
-        });
+        daemon.daemon(`${__dirname}/start.js`, '--daemon');
       }
     });
 
