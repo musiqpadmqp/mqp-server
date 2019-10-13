@@ -1,0 +1,7 @@
+{
+  "name": "mqp-server",
+  "description": "Heroku MQP server deployment",
+  "repository": "ttps://github.com/musiqpadmqp/mqp-server",
+  "logo": "https://avatars2.githubusercontent.com/u/56412560?s=88&v=4",
+  "keywords": ["node", "mqp", "server"]
+}
