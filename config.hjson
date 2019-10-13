@@ -140,12 +140,12 @@
 	// The amount of time users stay logged in for before having to login again, eg "2 days", "10h", "7d"
 	loginExpire: "5d",
 	db: {
-		dbType: "mysql"   				      // Values "level" for LevelDB, "mysql" for MySQL and "mongo" for MongoDB
+		dbType: "level"   				      // Values "level" for LevelDB, "mysql" for MySQL and "mongo" for MongoDB
 		dbDir: "./socketserver/db"	    // Only used for LevelDB. Directory to save databases.  Default is ./socketserver/db
-		mysqlUser: "v8fk5xdcwb7543by"     				      // Only used for MySQL.  Database username
-		mysqlPassword: "fc8kdl4iphfocjye" 					    // Only used for MySQL.  Database password
-		mysqlHost: "r42ii9gualwp7i1y.chr7pe7iynqr.eu-west-1.rds.amazonaws.com"                  // Only used for MySQL.  Host address
-		mysqlDatabase: "e5p2l3wjveqprn1e"               // Only used for MySQL.  Database being used
+		mysqlUser: ""     				      // Only used for MySQL.  Database username
+		mysqlPassword: "" 					    // Only used for MySQL.  Database password
+		mysqlHost: ""                  // Only used for MySQL.  Host address
+		mysqlDatabase: ""               // Only used for MySQL.  Database being used
 		mongoUser: ""                   // Only used for MongoDB.  Database username
 		mongoPassword: ""               // Only used for MongoDB.  Database password
 		mongoHost: ""                   // Only used for MongoDB.  Host address
