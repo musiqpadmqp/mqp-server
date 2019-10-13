@@ -132,7 +132,6 @@
 			secret: ""
 		}
 		musiqpad: {
-			key: "" // This is required in order for your socket to update the musiqpad lounge. Request an API Key here: https://musiqpad.com/lounge
 			sendLobbyStats: false
 		}
 	}
