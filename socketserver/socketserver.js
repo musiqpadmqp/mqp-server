@@ -17,6 +17,7 @@ const Room = require('./room');
 const Mailer = require('./mail/mailer');
 const YT = require('./YT');
 const Roles = require('./role');
+const {getExpanded} = require('./playlist');
 const log = new (require('basic-logger'))({showTimestamp: true, prefix: "SocketServer"});
 const WebSocketServer = ws.Server;
 
@@ -1366,17 +1367,17 @@ var SocketServer = function(server){
 
 						var tempUser = socket.user.makeUserObj();
 
-						/*if (socket.user.activepl){
+						if (socket.user.activepl){
 							socket.user.playlistCache[ socket.user.activepl ].getExpanded(function(err, plData){
 								tempUser.playlists[ socket.user.activepl ].content = YT.removeThumbs(plData);
 								tempUser.playlists[ socket.user.activepl ].num = plData.length;
 								returnObj.data.user = tempUser;
 								socket.sendJSON(returnObj);
 							});
-						}else{*/
+						}else{
 							returnObj.data.user = tempUser;
 							socket.sendJSON(returnObj);
-						/*}*/
+						}
 
 //						returnObj.data.vote = that.room.queue.getUserVote( socket );
 					};
