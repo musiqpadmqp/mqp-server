@@ -31,12 +31,12 @@
 		cert: "path-to-cert"
 	}
 	room: {
-		name: "Deezify"                  // This is your pad name. It is shown as a user friendly description on the lounge and tab name.
-		slug: "Deezify"         // Slugs are used to identify your pad when connecting to musiqpad! This slug must be unique and all in lowecase.
-		greet: "Welcome to Deezify!"
-		bg: "https://i.imgur.com/c8hKree.jpg"                            // Background image file path. Accepts external images. If this is undefined the default background will be used.
+		name: "MusiqPad"                  // This is your pad name. It is shown as a user friendly description on the lounge and tab name.
+		slug: "MusiqPad"         // Slugs are used to identify your pad when connecting to musiqpad! This slug must be unique and all in lowecase.
+		greet: "Welcome to MusiqPad!"
+		bg: ""                            // Background image file path. Accepts external images. If this is undefined the default background will be used.
 		maxCon: 0
-		ownerEmail: "microfix1252002@gmail.com" // This needs to be set then the server restarted to take effect.
+		ownerEmail: "" // This needs to be set then the server restarted to take effect.
 		guestCanSeeChat: true
 		bannedCanSeeChat: false
 		lastmsglimit: 6// How many messages a user can see after joining.
@@ -103,10 +103,10 @@
 			 Welcome to Deezify Community!
 			'''
 		tags: { // Tags for Google & co
-			keywords: "Deezify"
+			keywords: ""
 			description: ""
-			image: "https://cdn.musiqpad.com/img/icon-256.png" // Image on twitter/facebook/slack/...
-			twitter: "@deezifycf" 
+			image: "" // Image on twitter/facebook/slack/...
+			twitter: "" 
 			description: // A one to two sentence description for search engines & co
 				'''
 				Stream Deezify
@@ -121,11 +121,11 @@
 	}
 	apis: {
 		YT: {
-			key: "AIzaSyCjsBPNOaqwGx0wI6Xm8Om-Tydanu2V-pY" // Required api key in order for YouTube search to work.
+			key: "" // Required api key in order for YouTube search to work.
 			restrictSearchToMusic: false
 		}
 		SC: {
-			key: "b3f009303adf6466be053b65bd2b418a"
+			key: ""
 		}
 		reCaptcha: {
 			key: ""
