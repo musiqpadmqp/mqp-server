@@ -43,10 +43,6 @@ if (nconf.get('hostWebserver')) {
   server = (nconf.get('socketServer:port') === nconf.get('webServer:port') || nconf.get('socketServer:port') === '') ? webserver.server : null;
 }
 
-if (nconf.get('apis:musiqpad:sendLobbyStats') && (!nconf.get('apis:musiqpad:key') || nconf.get('apis:musiqpad:key') === '')) {
-  log.error('In order to send stats to the lobby you must generate an key here: https://musiqpad.com/lounge');
-  process.exit();
-}
 
 fs.writeFileSync(path.join(__dirname, '', 'webconfig.js'), webConfig);
 
