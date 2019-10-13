@@ -627,7 +627,8 @@ class Room {
 			song,
 			dj,
 			room: this.getRoomMeta(),
-			userCount: this.attendeeList.length
+			userCount: this.attendeeList.length,
+			url: nconf.get("apis:musiqpad:urltoyourpad")
 		};
 		const postOptions = {
 			host: 'mqpapi.glitch.me',
