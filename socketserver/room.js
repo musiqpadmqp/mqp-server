@@ -647,14 +647,6 @@ class Room {
 				if (callback) callback();
 			});
 			postReq.write(JSON.stringify(postData));
-			postReq.on('error', () => {
-				postReq.end();
-				console.log('Lobby Update errored.');
-			});
-			postReq.setTimeout(3000, () => {
-				console.log('Lobby Update timed out.');
-				postReq.abort();
-			});
 			postReq.end();
 		} catch (e) { }
 
