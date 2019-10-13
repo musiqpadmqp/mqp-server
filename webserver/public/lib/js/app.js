@@ -1906,17 +1906,17 @@
 			if(!MP.session.allowemojis) return;
 
 			//Basic
-			$.getJSON("https://raw.githubusercontent.com/Ranks/emojione/2.2.7/emoji.json", function(data) {
+			$.getJSON("https://raw.githubusercontent.com/musiqpadmqp/emojione/master/emoji.json", function(data) {
 				for(var e in data){
 					//MP.emotes[e] = MP.emotes[e] || "https://raw.githubusercontent.com/Ranks/emojify.js/master/dist/images/basic/" + e + ".png";
-					MP.emotes["Basic"][e] = MP.emotes["Basic"][e] || { url: "https://raw.githubusercontent.com/Ranks/emojione/master/assets/png/" + data[e].unicode + ".png" };
+					MP.emotes["Basic"][e] = MP.emotes["Basic"][e] || { url: "https://raw.githubusercontent.com/musiqpadmqp/emojione/master/assets/png/" + data[e].unicode + ".png" };
 
 					//Regular aliases
 					if(data[e].aliases)
 						for(var ee in data[e].aliases){
 							ee = data[e].aliases[ee].slice(1, -1);
 							//MP.emotes[ee] = MP.emotes[ee] || "https://raw.githubusercontent.com/Ranks/emojify.js/master/dist/images/basic/" + e + ".png";
-							MP.emotes["Basic"][ee] = MP.emotes["Basic"][ee] || { url: "https://raw.githubusercontent.com/Ranks/emojione/2.2.7/assets/png/" + data[e].unicode + ".png", style: 'max-width: 24px; max-height: 24px;', };
+							MP.emotes["Basic"][ee] = MP.emotes["Basic"][ee] || { url: "https://raw.githubusercontent.com/musiqpadmqp/emojione/master/assets/png/" + data[e].unicode + ".png", style: 'max-width: 24px; max-height: 24px;', };
 						}
 
 					//ASCII aliases
@@ -1934,7 +1934,7 @@
 		 				MP.emotes["TastyCat"][e.toLowerCase().replace('&', 'n')] = MP.emotes["TastyCat"][e.toLowerCase().replace('&', 'n')] || { url: data.emotes[e].url, style: 'max-width: ' + data.emotes[e].width + 'px ;max-height: ' + data.emotes[e].height + 'px;'};
 			    }).done(function(){
 				 	//Twitch.tv
-				 	$.getJSON("https://twitchemotes.com/api_cache/v2/images.json", function(data) {
+				 	$.getJSON("https://twitchemotes.com/api_cache/v3/images.json", function(data) {
 				        for(var e in data.images)
 				            MP.emotes["Twitch"][data.images[e].code.toLowerCase()] = MP.emotes["Twitch"][data.images[e].code.toLowerCase()] || { url: "https://static-cdn.jtvnw.net/emoticons/v1/" + e + "/1.0", style: 'max-width: 24px; max-height: 24px;', };
 				 	}).done(function(){
