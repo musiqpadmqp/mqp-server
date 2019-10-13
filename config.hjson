@@ -133,6 +133,7 @@
 		}
 		musiqpad: {
 			sendLobbyStats: false
+			urltoyourpad: "" //www.yourpad.com
 		}
 	}
 
