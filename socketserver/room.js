@@ -621,10 +621,8 @@ class Room {
 		if (!nconf.get('apis:musiqpad:sendLobbyStats')) {
 			if (callback) callback();
 			return;
-		} else if (!nconf.get('apis:musiqpad:key') || nconf.get('apis:musiqpad:key') === '') {
-			console.log('A musiqpad key must be defined in the config for updating the lobby server.');
-			return;
 		}
+		
 		const postData = {
 			song,
 			dj,
@@ -632,13 +630,12 @@ class Room {
 			userCount: this.attendeeList.length
 		};
 		const postOptions = {
-			host: 'api.musiqpad.com',
+			host: 'mqpapi.glitch.me',
 			port: '443',
 			path: `/pad/${this.roomInfo.slug}`,
 			method: 'POST',
 			headers: {
-				'Content-Type': 'application/json',
-				apikey: nconf.get('apis:musiqpad:key')
+				'Content-Type': 'application/json'
 			}
 		};
 		try {
