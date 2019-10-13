@@ -3,6 +3,8 @@
 ## Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/musiqpadmqp/mqp-server)
 
+NOTE: you must install cleardb on your heroku and change in config.hjson to mysql heroku clears leveldb
+
 ## About
 
 The base for creating a self-hosted pad.
