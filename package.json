@@ -10,19 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/musiqpad/mqp-server.git"
+    "url": "git+https://github.com/musiqpadmqp/mqp-server.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/musiqpad/mqp-server/issues"
+    "url": "https://github.com/musiqpad/mqp-servermqp/issues"
   },
-  "homepage": "https://github.com/musiqpad/mqp-server#readme",
+  "homepage": "https://github.com/musiqpadmqp/mqp-server#readme",
   "scripts": {
     "start": "node start.js",
-    "stop": "node ./mqp.js stop",
-    "restart": "node ./mqp.js restart",
-    "log": "node ./mqp.js log",
-    "update": "node ./mqp.js update",
     "test": "ava --verbose"
   },
   "dependencies": {
