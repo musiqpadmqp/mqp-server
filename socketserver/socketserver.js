@@ -232,7 +232,8 @@ var SocketServer = function(server){
 		}
 	}, 6000);
 
-	this.wss.on("connection", function(socket){
+	this.wss.on("connection", function(socket, req){
+		socket.upgradeReq = req;
 		var ip = (socket.upgradeReq.headers['x-forwarded-for'] || socket.upgradeReq.connection.remoteAddress);
 
 		log.info(ip + ' connected');
