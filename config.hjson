@@ -99,8 +99,8 @@
 		}
 		description:
 			'''
-			 <h1>Deezify</h1>
-			 Welcome to Deezify Community!
+			 <h1>MusiqPad</h1>
+			 Welcome to MusiqPad!
 			'''
 		tags: { // Tags for Google & co
 			keywords: ""
