@@ -1,4 +1,4 @@
-# mqp-server [![Version npm](https://img.shields.io/npm/v/mqp-server.svg?style=flat-square)](https://www.npmjs.com/package/mqp-server) [![npm Downloads](https://img.shields.io/npm/dm/mqp-server.svg?style=flat-square)](https://www.npmjs.com/package/mqp-server) [![Build Status](https://img.shields.io/travis/musiqpad/mqp-server/master.svg?style=flat-square)](https://travis-ci.org/musiqpad/mqp-server) [![dependencies Status](https://david-dm.org/musiqpad/mqp-server/master/status.svg?style=flat-square)](https://david-dm.org/musiqpad/mqp-server/master)
+# mqp-server [![dependencies Status](https://david-dm.org/musiqpadmqp/mqp-server/master/status.svg?style=flat-square)](https://david-dm.org/musiqpadmqp/mqp-server/master)
 
 ## Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/musiqpadmqp/mqp-server) [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/musiqpadmqp/mqp-server)
