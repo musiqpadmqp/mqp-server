@@ -34,7 +34,7 @@
 		name: "MusiqPad"                  // This is your pad name. It is shown as a user friendly description on the lounge and tab name.
 		slug: "MusiqPad"         // Slugs are used to identify your pad when connecting to musiqpad! This slug must be unique and all in lowecase.
 		greet: "Welcome to MusiqPad!"
-		bg: ""                            // Background image file path. Accepts external images. If this is undefined the default background will be used.
+		bg: "https://musiqpadmqp.github.io/lounge/css/img/city-scape.jpg"                            // Background image file path. Accepts external images. If this is undefined the default background will be used.
 		maxCon: 0
 		ownerEmail: "" // This needs to be set then the server restarted to take effect.
 		guestCanSeeChat: true
