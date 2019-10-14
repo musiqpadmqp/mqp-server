@@ -109,7 +109,7 @@
 			twitter: "" 
 			description: // A one to two sentence description for search engines & co
 				'''
-				Stream Deezify
+				MusiqPad
 				'''
 			themeColor: "" // a hex color for the theme on chrome for android
 			favicon: "/pads/lib/img/icon.png"
