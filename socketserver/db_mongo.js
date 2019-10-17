@@ -246,14 +246,14 @@ function initCollections(callback) {
 }
 
 function MongoDB(cb) {
-    const dburl = `mongodb://${nconf.get('db:mongoUser')}:${nconf.get('db:mongoPassword')}@${nconf.get('db:mongoHost')}:27017/${nconf.get('db:mongoDatabase')}`;
-
-    mongodb.connect(dburl, function (err, database) {
+    const dburl = `mongodb+srv://${nconf.get('db:mongoUser')}:${nconf.get('db:mongoPassword')}@${nconf.get('db:mongoHost')}`;
+    mongodb.connect(dburl, { useUnifiedTopology: true }, function (err, client) {
+        useUnifiedTopology: true;
         if (err) {
             throw new Error(`Could not connect to database: ${err}`);
         }
-
-        db = database;
+    
+        db = client.db(nconf.get('db:mongoDatabase'));
 
         createCollectionsIfNoExist(() => {
             initCollections(() => {
