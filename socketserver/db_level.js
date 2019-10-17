@@ -1,6 +1,7 @@
 'use strict';
 // Modules
 const levelup = require('levelup');
+const leveldown = require('leveldown')
 const path = require('path');
 const util = require('util');
 const fs = require('fs');
@@ -21,6 +22,29 @@ let currentUID = 0;
 let currentCID = 0;
 const expires = 1000 * 60 * 60 * 24 * nconf.get('loginExpire');
 let usernames = [];
+
+function setupDB(dir, setup, callback) {
+  setup = setup || function () {};
+  callback = callback || function () {};
+
+  return levelup(leveldown(dir), null, (err, newdb) => {
+    if (err) {
+      log.error('Could not open db');
+      callback(err);
+      return;
+    }
+
+    newdb.get('setup', (err) => {
+      if (err && err.notFound) {
+        newdb.put('setup', 1);
+        setup(newdb);
+        callback(null, newdb);
+      } else {
+        callback(null, newdb);
+      }
+    });
+  });
+}
 
 function setupDB(dir, setup, callback) {
   setup = setup || function () {};
@@ -576,7 +600,7 @@ LevelDB.prototype.getConversations = function (uid, callback) {
 
     this.PmDB.createReadStream()
         .on('data', function (data) {
-            if (data.key.indexOf(':') == -1 || (uids = data.key.split(':')).indexOf(uid) == -1) return;
+            if (data.key.indexOf(':') == -1 || (uids = data.key.split(':') + "").indexOf(uid) == -1) return;
 
             try {
                 var convo = JSON.parse(data.value);
