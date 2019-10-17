@@ -5,6 +5,7 @@ const nconf = require('nconf');
 const fs = require('fs-extra');
 const hjson = require('hjson');
 const crypto = require('crypto');
+const daemon = true;
 
 const hjsonWrapper = {
   parse: (text) => hjson.parse(text, { keepWsc: true, }),
@@ -56,8 +57,8 @@ process.on('uncaughtException', (err) => {
 
 process.on('exit', socketServer.gracefulExit);
 process.on('SIGINT', socketServer.gracefulExit);
-var daemon = "no";
-if (daemon = "yes") {
+
+if (daemon == true) {
   if (fileExistsSync(`${__dirname}/pidfile`)) {
     try {
       const	pid = fs.readFileSync(`${__dirname}/pidfile`, { encoding: 'utf-8' });
