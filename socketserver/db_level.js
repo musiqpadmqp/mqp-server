@@ -600,6 +600,7 @@ LevelDB.prototype.getConversations = function (uid, callback) {
 
     this.PmDB.createReadStream()
         .on('data', function (data) {
+	    data.key = data.key.toString();
             if (data.key.indexOf(':') == -1 || (uids = data.key.split(':') + "").indexOf(uid) == -1) return;
 
             try {
