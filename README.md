@@ -9,7 +9,7 @@ NOTE: you must install mongodb or mysql and configure it in your settings (THIS 
 The base for creating a self-hosted pad.
 
 - [Website](https://musiqpadmqp.github.io)
-- [Latest Release](https://github.com/musiqpadmqp/mqp-server/releases/latest)
+- [Latest Release](https://github.com/musiqpadmqp/mqp-server/archive/master.zip)
 - [Discord](https://musiqpadmqp.github.io/discord)
 - [Feedback / Issues](https://musiqpadmqp.github.io/feedback)
 
