@@ -1,7 +1,7 @@
 'use strict';
 // Modules
-const levelup = require('levelup');
-const leveldown = require('leveldown')
+var levelup = require('levelup'),
+leveldown = require('leveldown');
 const path = require('path');
 const util = require('util');
 const fs = require('fs');
@@ -50,7 +50,7 @@ function setupDB(dir, setup, callback) {
   setup = setup || function () {};
   callback = callback || function () {};
 
-  return levelup(dir, null, (err, newdb) => {
+  return levelup(leveldown(dir, null, (err, newdb) => {
     if (err) {
       log.error('Could not open db');
       callback(err);
@@ -66,7 +66,7 @@ function setupDB(dir, setup, callback) {
         callback(null, newdb);
       }
     });
-  });
+  }));
 }
 
 function LevelDB(callback) {
