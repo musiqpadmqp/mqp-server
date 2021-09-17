@@ -248,7 +248,7 @@ function initCollections(callback) {
 function MongoDB(cb) {
     const dburl = `mongodb+srv://${nconf.get('db:mongoUser')}:${nconf.get('db:mongoPassword')}@${nconf.get('db:mongoHost')}`;
     mongodb.connect(dburl, { useUnifiedTopology: true }, function (err, client) {
-        useUnifiedTopology: true;
+	    
         if (err) {
             throw new Error(`Could not connect to database: ${err}`);
         }
