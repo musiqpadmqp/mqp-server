@@ -19,7 +19,6 @@
   "homepage": "https://github.com/musiqpadmqp/mqp-server#readme",
   "scripts": {
     "start": "node start.js",
-    "test": "ava --verbose"
   },
   "dependencies": {
     "basic-logger": "^0.4.4",
@@ -51,9 +50,5 @@
     "xoauth2": "^1.2.0",
     "yesno": "^0.3.1",
     "lodash": "^4.17.21"
-  },
-  "ava": {
-    "concurrency": 5,
-    "failFast": true
   }
 }
