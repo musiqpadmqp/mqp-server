@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/musiqpadmqp/mqp-server#readme",
   "scripts": {
-    "start": "node start.js",
+    "start": "node start.js"
   },
   "dependencies": {
     "basic-logger": "^0.4.4",
