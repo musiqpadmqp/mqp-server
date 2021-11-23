@@ -1,4 +1,4 @@
-# mqp-server [![dependencies Status](https://david-dm.org/musiqpadmqp/mqp-server/master/status.svg?style=flat-square)](https://david-dm.org/musiqpadmqp/mqp-server/master) [![Travis CI](https://api.travis-ci.com/musiqpadmqp/mqp-server.svg?branch=master)](https://api.travis-ci.com/musiqpadmqp/mqp-server.svg?branch=master) 
+# mqp-server [![Travis CI](https://api.travis-ci.com/musiqpadmqp/mqp-server.svg?branch=master)](https://api.travis-ci.com/musiqpadmqp/mqp-server.svg?branch=master) 
 
 ## Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/musiqpadmqp/mqp-server) [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/musiqpadmqp/mqp-server)
@@ -15,10 +15,10 @@ The base for creating a self-hosted pad.
 
 ## Quick Start Install
 
-1. Make sure you have installed [NodeJS](https://nodejs.org/en/download/) on the hosting computer with version 4.0.0 or later.
+1. Make sure you have installed [NodeJS](https://nodejs.org/en/download/) on the hosting computer with version 14.x or later.
 2. Download the [latest stable version](https://github.com/musiqpadmqp/mqp-server/releases/latest)
 3. Unzip it in the location you want to install
-4. Open a terminal and `npm install --production` it
+4. Open a terminal and `npm install` it
 5. Start the server by running `npm start`
 6. If everything went well, there should be no error messages!
 
